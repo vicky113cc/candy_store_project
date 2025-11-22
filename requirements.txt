@@ -1,0 +1,18 @@
+# 無人糖果商店 - 套件清單
+
+# YOLO 物件偵測
+ultralytics>=8.0.0
+
+# OpenAI API (語音辨識、LLM、TTS)
+openai>=1.0.0
+
+# 音訊處理
+sounddevice>=0.4.0
+soundfile>=0.12.0
+numpy>=1.24.0
+
+# 影像處理
+opencv-python>=4.8.0
+
+# 環境變數
+python-dotenv>=1.0.0

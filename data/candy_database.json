@@ -1,0 +1,116 @@
+{
+  "store_name": "無人糖果商店",
+  "currency": "TWD",
+  "candies": [
+    {
+      "id": 1,
+      "name": "Skittles",
+      "name_zh": "彩虹糖",
+      "price": 45,
+      "flavor": "綜合水果",
+      "description": "酸酸甜甜，五彩繽紛",
+      "tags": ["酸", "水果", "硬糖"],
+      "suitable_for": ["喜歡酸味", "喜歡水果糖"]
+    },
+    {
+      "id": 2,
+      "name": "Snickers",
+      "name_zh": "士力架",
+      "price": 35,
+      "flavor": "巧克力、花生、焦糖",
+      "description": "吃一條很有飽足感",
+      "tags": ["巧克力", "花生", "焦糖", "飽足"],
+      "suitable_for": ["想吃巧克力", "肚子餓"]
+    },
+    {
+      "id": 3,
+      "name": "Airheads",
+      "name_zh": "軟糖",
+      "price": 30,
+      "flavor": "多種水果味",
+      "description": "QQ軟軟，價格最便宜",
+      "tags": ["軟糖", "水果", "便宜"],
+      "suitable_for": ["小朋友", "喜歡軟糖"]
+    },
+    {
+      "id": 4,
+      "name": "M&M's Peanut",
+      "name_zh": "M&M's 花生",
+      "price": 40,
+      "flavor": "巧克力包花生",
+      "description": "一顆一顆很好分享",
+      "tags": ["巧克力", "花生", "分享"],
+      "suitable_for": ["喜歡花生", "想分著吃"]
+    },
+    {
+      "id": 5,
+      "name": "M&M's Regular",
+      "name_zh": "M&M's 原味",
+      "price": 38,
+      "flavor": "牛奶巧克力",
+      "description": "經典口味，不會膩",
+      "tags": ["巧克力", "經典"],
+      "suitable_for": ["喜歡純巧克力"]
+    },
+    {
+      "id": 6,
+      "name": "Gummy Worms",
+      "name_zh": "蟲蟲軟糖",
+      "price": 32,
+      "flavor": "水果味軟糖",
+      "description": "造型有趣，小朋友最愛",
+      "tags": ["軟糖", "水果", "造型"],
+      "suitable_for": ["小朋友", "喜歡有趣造型"]
+    },
+    {
+      "id": 7,
+      "name": "Milky Way",
+      "name_zh": "乳白路",
+      "price": 40,
+      "flavor": "牛奶巧克力、焦糖",
+      "description": "口感滑順綿密",
+      "tags": ["巧克力", "焦糖", "滑順"],
+      "suitable_for": ["喜歡甜一點的巧克力"]
+    },
+    {
+      "id": 8,
+      "name": "Nerds",
+      "name_zh": "書呆子糖",
+      "price": 28,
+      "flavor": "酸甜水果味",
+      "description": "小顆粒，脆脆的口感",
+      "tags": ["酸", "脆", "水果", "便宜"],
+      "suitable_for": ["喜歡酸甜", "喜歡脆脆口感"]
+    },
+    {
+      "id": 9,
+      "name": "Starburst",
+      "name_zh": "星爆軟糖",
+      "price": 35,
+      "flavor": "多種水果味",
+      "description": "軟Q有嚼勁",
+      "tags": ["軟糖", "水果", "嚼勁"],
+      "suitable_for": ["喜歡水果軟糖"]
+    },
+    {
+      "id": 10,
+      "name": "Three Musketeers",
+      "name_zh": "乳脂軟糖",
+      "price": 38,
+      "flavor": "牛奶巧克力、乳脂內餡",
+      "description": "口感輕盈蓬鬆",
+      "tags": ["巧克力", "輕盈"],
+      "suitable_for": ["想吃輕盈口感巧克力"]
+    },
+    {
+      "id": 11,
+      "name": "Twizzlers",
+      "name_zh": "扭扭糖",
+      "price": 33,
+      "flavor": "草莓味",
+      "description": "可以當吸管用，造型有趣",
+      "tags": ["草莓", "造型", "有趣"],
+      "suitable_for": ["喜歡草莓味", "想要有趣吃法"]
+    }
+  ]
+}

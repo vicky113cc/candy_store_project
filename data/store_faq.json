@@ -1,0 +1,64 @@
+{
+  "faq": [
+    {
+      "question": "有什麼推薦的",
+      "keywords": ["推薦", "建議", "好吃"],
+      "answer": "看你喜歡什麼口味～巧克力推薦士力架，水果糖推薦彩虹糖，軟糖推薦 Airheads"
+    },
+    {
+      "question": "最便宜的是什麼",
+      "keywords": ["便宜", "最低", "省錢"],
+      "answer": "Nerds 書呆子糖 28 元最便宜"
+    },
+    {
+      "question": "有沒有酸的糖果",
+      "keywords": ["酸", "酸酸"],
+      "answer": "彩虹糖酸酸甜甜的，很推！Nerds 也是酸甜口味"
+    },
+    {
+      "question": "我想要巧克力口味",
+      "keywords": ["巧克力", "chocolate"],
+      "answer": "巧克力有士力架(35元)、Milky Way(40元)、M&M's(38-40元)、Three Musketeers(38元)"
+    },
+    {
+      "question": "小朋友適合吃什麼",
+      "keywords": ["小朋友", "小孩", "兒童"],
+      "answer": "推薦蟲蟲軟糖或 Airheads！造型可愛又好吃"
+    },
+    {
+      "question": "有花生的嗎",
+      "keywords": ["花生", "堅果"],
+      "answer": "有！M&M's 花生口味和士力架都有花生"
+    },
+    {
+      "question": "我要結帳",
+      "keywords": ["結帳", "付款", "買單", "掃描"],
+      "answer": "好的，請把糖果放在鏡頭前讓我掃描"
+    },
+    {
+      "question": "怎麼付款",
+      "keywords": ["付款", "怎麼付", "硬幣"],
+      "answer": "掃完糖果後，我會告訴你總金額，再把硬幣放鏡頭前就可以囉"
+    },
+    {
+      "question": "有軟糖嗎",
+      "keywords": ["軟糖", "QQ", "軟軟"],
+      "answer": "有！Airheads(30元)、蟲蟲軟糖(32元)、星爆軟糖(35元)都是軟糖"
+    },
+    {
+      "question": "有草莓口味嗎",
+      "keywords": ["草莓"],
+      "answer": "有！Twizzlers 扭扭糖是草莓口味，33元，還可以當吸管用喔"
+    }
+  ],
+  "greetings": {
+    "welcome": "歡迎光臨糖果商店！請問想要什麼糖果呢？",
+    "goodbye": "感謝光臨，歡迎下次再來！"
+  },
+  "prompts": {
+    "scan_candy": "好的，請把糖果放在鏡頭前讓我掃描",
+    "scan_coin": "請投入硬幣付款",
+    "not_enough": "金額不足，請補足差額喔",
+    "payment_complete": "付款完成，謝謝光臨！"
+  }
+}
