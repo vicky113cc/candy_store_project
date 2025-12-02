@@ -1,8 +1,8 @@
 #  無人糖果商店
 
 本專案為無人糖果商店的智能互動系統，整合 YOLO 物件偵測、RAG 資料檢索、大型語言模型(LLM)與語音合成(TTS)技術，模擬真人收銀員提供完整的購物體驗。
-<img src="https://s3.us-west-1.amazonaws.com/evanjuras.com/img/yolo-model-demo.gif" height="360"><br>
-<img src="https://www.dropbox.com/scl/fi/cowvznweh756nx0lqa6q6/yolo_coin.gif?rlkey=w7qgivyvft6yztbrh5tjhx86a&st=6ms2viot&dl=1&raw=1" height="360"><br>
+
+<img width="319" height="739" alt="螢幕擷取畫面 2025-12-02 232714" src="https://github.com/user-attachments/assets/2d8b1381-2fee-47f6-97d7-acda579c3e1a" />
 
 
 ## 功能
@@ -11,6 +11,7 @@
 - **YOLO 硬幣辨識**：辨識台幣硬幣面額（1, 5, 10, 50 元）
 - **RAG 推薦系統**：根據顧客需求推薦適合的糖果
 - **語音互動**：Whisper 語音辨識 + GPT 回覆 + TTS 語音播報
+  
   ```
 顧客進入商店
     ↓
@@ -128,9 +129,10 @@ python 2025T105train_yolov11_models.py
 cd test
 python 03-YOLOv11_candy.py
 ```
-<img width="1500" height="711" alt="image" src="https://github.com/user-attachments/assets/c502bf62-2ffb-4602-962d-2d265f25dda6" />
-<img width="636" height="510" alt="image" src="https://github.com/user-attachments/assets/1bdacb05-a506-43ee-9731-9af3a9ea658c" />
-<img width="1500" height="712" alt="image" src="https://github.com/user-attachments/assets/0947bee8-7a8d-4c1b-b3c3-a6fc874ebf2a" />
+
+<img width="318" height="205" alt="image" src="https://github.com/user-attachments/assets/1bdacb05-a506-43ee-9731-9af3a9ea658c" /></br>
+<img width="600" height="356" alt="image" src="https://github.com/user-attachments/assets/c502bf62-2ffb-4602-962d-2d265f25dda6" />
+<img width="600" height="356" alt="image" src="https://github.com/user-attachments/assets/0947bee8-7a8d-4c1b-b3c3-a6fc874ebf2a" />
 
 
 ## 訓練成果
