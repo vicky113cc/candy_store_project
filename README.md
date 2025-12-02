@@ -1,6 +1,9 @@
 #  無人糖果商店
 
-結合 YOLO 物件偵測、RAG 推薦系統、語音互動的無人商店專案。
+本專案為無人糖果商店的智能互動系統，整合 YOLO 物件偵測、RAG 資料檢索、大型語言模型(LLM)與語音合成(TTS)技術，模擬真人收銀員提供完整的購物體驗。
+<img src="https://s3.us-west-1.amazonaws.com/evanjuras.com/img/yolo-model-demo.gif" height="360"><br>
+<img src="https://www.dropbox.com/scl/fi/cowvznweh756nx0lqa6q6/yolo_coin.gif?rlkey=w7qgivyvft6yztbrh5tjhx86a&st=6ms2viot&dl=1&raw=1" height="360"><br>
+
 
 ## 功能
 
@@ -8,6 +11,29 @@
 - **YOLO 硬幣辨識**：辨識台幣硬幣面額（1, 5, 10, 50 元）
 - **RAG 推薦系統**：根據顧客需求推薦適合的糖果
 - **語音互動**：Whisper 語音辨識 + GPT 回覆 + TTS 語音播報
+  ```
+顧客進入商店
+    ↓
+[語音互動] 顧客詢問商品或尋求推薦
+    ↓
+[RAG 檢索] 從資料庫檢索商品資訊
+    ↓
+[LLM 生成] 產生個性化推薦與回應
+    ↓
+[TTS 語音] 播放語音回應給顧客
+    ↓
+顧客選定商品並放置結帳區
+    ↓
+[YOLO 辨識] 辨識商品種類與數量
+    ↓
+系統語音告知總金額
+    ↓
+顧客投入硬幣
+    ↓
+[YOLO 辨識] 辨識並計算硬幣金額
+    ↓
+確認付款完成 → 結帳成功！
+```
 
 ## 安裝
 
@@ -32,17 +58,26 @@ python 03-YOLOv11_candy.py
 ## 專案結構
 
 ```
-無人糖果商店/
-├── models/                 # YOLO 模型
-│   ├── yolo11_candy.pt
-│   └── yolo11_coin.pt
-├── data/                   # RAG 資料庫
-│   ├── candy_database.json
-│   └── store_faq.json
-├── audio/prompts/          # 預錄語音
-├── candy_store_chatroom.py # 主程式
-└── requirements.txt
-
+candy_store_project/
+├── data/
+│   ├── candy_database.json       # 糖果商品資料庫
+│   └── store_faq.json            # 商店常見問題資料庫
+├── models/
+│   ├── yolo11_canday.pt          # 糖果辨識模型
+│   └── yolo11_NTD.pt             # 硬幣辨識模型
+├── saved/                        # 語音檔案暫存目錄
+├── test/
+│   └── 03-YOLOv11_candy.py       # YOLO 測試腳本
+├── training/
+│   ├── 2025T105train_yolov11_models.py  # 模型訓練腳本
+│   └── my_model.zip              # 訓練資料集
+├── audio_prompts/                # 語音提示檔案
+├── rag_database.py               # RAG 資料庫模組
+├── candy_store_chatroom.py       # 主程式（命令列版本）
+├── .env                          # 環境變數設定（需自行建立）
+├── LICENSE                       # 授權條款
+├── README.md                     # 專案說明文件
+└── requirements.txt              # Python 套件需求
 ```
 
 ## 可辨識糖果（11 種）
@@ -67,8 +102,39 @@ python 03-YOLOv11_candy.py
 - **語音辨識**：OpenAI Whisper (gpt-4o-mini-transcribe)
 - **語言模型**：GPT-4o-mini
 - **語音合成**：OpenAI TTS (gpt-4o-mini-tts)
+- **影像處理**: OpenCV
+
+## 模型訓練
+
+### 訓練糖果辨識模型
+```bash
+cd training
+python 2025T105train_yolov11_models.py
+```
+
+訓練完成後將模型檔案移至 `models/` 目錄。
+
+### 資料集準備
+
+1. 收集糖果圖片並標註
+2. 使用 Roboflow 或 LabelImg 進行標註
+3. 匯出為 YOLO 格式
+4. 放置於 `training/my_model.zip`
+
+## 測試腳本
+
+### 測試 YOLO 辨識功能
+```bash
+cd test
+python 03-YOLOv11_candy.py
+```
+<img width="1500" height="711" alt="image" src="https://github.com/user-attachments/assets/c502bf62-2ffb-4602-962d-2d265f25dda6" />
+<img width="636" height="510" alt="image" src="https://github.com/user-attachments/assets/1bdacb05-a506-43ee-9731-9af3a9ea658c" />
+<img width="1500" height="712" alt="image" src="https://github.com/user-attachments/assets/0947bee8-7a8d-4c1b-b3c3-a6fc874ebf2a" />
+
 
 ## 訓練成果
+
 
 ### 糖果模型
 - mAP50: 0.995
